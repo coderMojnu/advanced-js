@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const user = {
+            id: 245,
+            name: "Mojnu",
+            lover: {
+                name: "Selina",
+                fFood: "Vath"
+            },
+    friends: ["Shamim", "Anando", "Rokibul"],
+        };
+        //send data to server
+        const userJSON = JSON.stringify(user);
+        console.log(userJSON);
+        
+        //load data from server
+        const userFromJSON = JSON.parse(userJSON);
+        console.log(userFromJSON);
+    </script>
+</body>
+
+</html>
